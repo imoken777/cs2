@@ -2,10 +2,11 @@
   "notebook.formatOnSave.enabled": true,
   "notebook.formatOnCellExecution": true,
   "[python]": {
-    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.defaultFormatter": "charliermarsh.ruff",
     "editor.codeActionsOnSave": {
       "source.organizeImports": true
-    }
+    },
+    "editor.formatOnType": true
   },
   "python.testing.unittestArgs": ["-v", "-s", "./sample", "-p", "test_*.py"],
   "python.testing.pytestEnabled": false,
