@@ -28,6 +28,12 @@
 
     <br />
 
+    {% if articles %} {% for article in articles %}
+    <a href="{% url 'detail' article.id %}">{{ article.title }}</a>
+    <small>{{ article.created_at }}</small>
+    <div>{{ article.body | linebreaks }}</div>
+    {% endfor %} {% else %}
     <p>No article.</p>
+    {% endif %}
   </body>
 </html>
