@@ -8,6 +8,6 @@ weather = ["Sunny", "Rainy", "Cloudy", "Snowy"]
 
 def index(request):
     params = {}
-    params["title"] = "3 days forecast"
-    params["forecasts"] = random.choices(weather, k=3)
+    params["title"] = "7 days forecast"
+    params["forecasts"] = random.choices(weather, k=7)
     return render(request, "forecast/index.html", params)

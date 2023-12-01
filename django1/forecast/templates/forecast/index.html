@@ -12,6 +12,12 @@
       <li>Day {{forloop.counter}}: {{item}}</li>
       {% if item == "Rainy" %}
       <img src="https://icongr.am/fontawesome/umbrella.svg" alt="umbrella" />
+      {% endif %} {% if item == "Sunny" %}
+      <img src="https://icongr.am/fontawesome/sun-o.svg" alt="sun" />
+      {% endif %} {% if item == "Cloudy" %}
+      <img src="https://icongr.am/fontawesome/cloud.svg" alt="cloud" />
+      {% endif %} {% if item == "Snowy" %}
+      <img src="https://icongr.am/fontawesome/snowflake-o.svg" alt="snow" />
       {% endif %} {% endfor %}
     </ul>
     <p><a href="{% url 'root' %}">Top page</a></p>
