@@ -1,10 +1,16 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html>
   <head>
     <title>Edit</title>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="{% static 'blog/css/edit.css' %}" />
   </head>
   <body>
+    <div id="header">
+      <img src="{% static 'blog/img/iniad.png' %}" alt="Logo" />
+    </div>
     <h1>Edit article</h1>
     <form action="{% url 'update' article.id %}" method="post">
       {% csrf_token %}
